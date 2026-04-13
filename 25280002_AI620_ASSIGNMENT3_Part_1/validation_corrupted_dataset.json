@@ -1,0 +1,900 @@
+{
+  "success": false,
+  "results": [
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_table_columns_to_match_set",
+        "kwargs": {
+          "column_set": [
+            "id",
+            "make",
+            "model",
+            "year",
+            "engine_cc",
+            "mileage_km",
+            "city",
+            "body_type",
+            "transmission",
+            "fuel_type",
+            "price_pkr",
+            "color",
+            "registered",
+            "num_owners"
+          ],
+          "exact_match": false,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "observed_value": [
+          "id",
+          "make",
+          "model",
+          "year",
+          "engine_cc",
+          "mileage_km",
+          "city",
+          "body_type",
+          "transmission",
+          "fuel_type",
+          "price_pkr",
+          "color",
+          "registered",
+          "num_owners"
+        ]
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_table_row_count_to_be_between",
+        "kwargs": {
+          "max_value": 200000,
+          "min_value": 1000,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "observed_value": 50500
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "expectation_type": "expect_compound_columns_to_be_unique",
+        "kwargs": {
+          "column_list": [
+            "make",
+            "model",
+            "year",
+            "price_pkr"
+          ],
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 1000,
+        "unexpected_percent": 1.9801980198019802,
+        "partial_unexpected_list": [
+          {
+            "make": "Toyota",
+            "model": "Mira",
+            "year": 1800,
+            "price_pkr": 762586
+          },
+          {
+            "make": "Toyota",
+            "model": "Tucson",
+            "year": 2010,
+            "price_pkr": 1032781
+          },
+          {
+            "make": "Suzuki",
+            "model": "Corolla",
+            "year": 2016,
+            "price_pkr": 542052
+          },
+          {
+            "make": "Daihatsu",
+            "model": "Lancer",
+            "year": 2021,
+            "price_pkr": 3398805
+          },
+          {
+            "make": "Mitsubishi",
+            "model": "Lancer",
+            "year": 2023,
+            "price_pkr": 1518631
+          },
+          {
+            "make": "Daihatsu",
+            "model": "Tucson",
+            "year": 2020,
+            "price_pkr": 4256047
+          },
+          {
+            "make": "Honda",
+            "model": "Lancer",
+            "year": 2010,
+            "price_pkr": -3705822
+          },
+          {
+            "make": "Daihatsu",
+            "model": "Tucson",
+            "year": 2016,
+            "price_pkr": 3755679
+          },
+          {
+            "make": "Daihatsu",
+            "model": "Cultus",
+            "year": 2022,
+            "price_pkr": 1584661
+          },
+          {
+            "make": "Suzuki",
+            "model": "Cultus",
+            "year": 2022,
+            "price_pkr": 503676
+          },
+          {
+            "make": "Mitsubishi",
+            "model": "City",
+            "year": 2017,
+            "price_pkr": 1098793
+          },
+          {
+            "make": "Daihatsu",
+            "model": "Sportage",
+            "year": 2010,
+            "price_pkr": 2597965
+          },
+          {
+            "make": "Mitsubishi",
+            "model": "Sportage",
+            "year": 2023,
+            "price_pkr": 4878984
+          },
+          {
+            "make": "Toyota",
+            "model": "City",
+            "year": 2009,
+            "price_pkr": 2214930
+          },
+          {
+            "make": "Kia",
+            "model": "Civic",
+            "year": 2006,
+            "price_pkr": 3477912
+          },
+          {
+            "make": "Daihatsu",
+            "model": "Tucson",
+            "year": 2013,
+            "price_pkr": 2762630
+          },
+          {
+            "make": "Toyota",
+            "model": "City",
+            "year": 2011,
+            "price_pkr": 2705362
+          },
+          {
+            "make": "Daihatsu",
+            "model": "Civic",
+            "year": 2006,
+            "price_pkr": 3791553
+          },
+          {
+            "make": "Toyota",
+            "model": "Cultus",
+            "year": 2019,
+            "price_pkr": 2478487
+          },
+          {
+            "make": "Suzuki",
+            "model": "Sportage",
+            "year": 2017,
+            "price_pkr": 3933549
+          }
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 1.9801980198019802,
+        "unexpected_percent_nonmissing": 1.9801980198019802
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_unique",
+        "kwargs": {
+          "column": "id",
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 1000,
+        "unexpected_percent": 1.9801980198019802,
+        "partial_unexpected_list": [
+          103,
+          187,
+          189,
+          234,
+          241,
+          410,
+          378,
+          663,
+          645,
+          635,
+          719,
+          880,
+          888,
+          905,
+          961,
+          1297,
+          1368,
+          1535,
+          1609,
+          1670
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 1.9801980198019802,
+        "unexpected_percent_nonmissing": 1.9801980198019802
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "id",
+          "mostly": 0.99,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_of_type",
+        "kwargs": {
+          "column": "id",
+          "type_": "int64",
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "observed_value": "int64"
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "make",
+          "mostly": 0.99,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "model",
+          "mostly": 0.99,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "year",
+          "mostly": 0.99,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "column": "year",
+          "max_value": 2025,
+          "min_value": 1990,
+          "mostly": 0.97,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 2037,
+        "unexpected_percent": 4.033663366336634,
+        "partial_unexpected_list": [
+          2099,
+          1800,
+          1800,
+          1950,
+          1950,
+          2035,
+          1800,
+          2035,
+          2035,
+          1950,
+          2099,
+          2099,
+          2099,
+          2099,
+          1800,
+          2099,
+          2099,
+          1800,
+          1950,
+          1800
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 4.033663366336634,
+        "unexpected_percent_nonmissing": 4.033663366336634
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "price_pkr",
+          "mostly": 0.99,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "column": "price_pkr",
+          "max_value": 50000000,
+          "meta": {
+            "section": "Validity - Price"
+          },
+          "min_value": 100000,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 1530,
+        "unexpected_percent": 3.0297029702970297,
+        "partial_unexpected_list": [
+          -1885744,
+          -3934700,
+          -1435409,
+          -2483480,
+          -2450615,
+          -1654327,
+          -714288,
+          -3705822,
+          -912124,
+          -2876849,
+          -4954953,
+          -2167893,
+          -2256261,
+          -2764171,
+          -2442968,
+          -3841477,
+          -948883,
+          -2898677,
+          -4568507,
+          -3649135
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 3.0297029702970297,
+        "unexpected_percent_nonmissing": 3.0297029702970297
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_median_to_be_between",
+        "kwargs": {
+          "column": "price_pkr",
+          "max_value": 10000000,
+          "min_value": 500000,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "observed_value": 2681200.0
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "transmission",
+          "mostly": 0.99,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "column": "transmission",
+          "mostly": 0.95,
+          "value_set": [
+            "Automatic",
+            "Manual"
+          ],
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 2628,
+        "unexpected_percent": 5.203960396039604,
+        "partial_unexpected_list": [
+          "AUTO",
+          "Manuall",
+          "autmatic",
+          "AUTO",
+          "autmatic",
+          "autmatic",
+          "Manuall",
+          "MANUAL ",
+          "autmatic",
+          "AUTO",
+          "AUTO",
+          "MANUAL ",
+          "autmatic",
+          "autmatic",
+          "Manuall",
+          "AUTO",
+          "Manuall",
+          "MANUAL ",
+          "AUTO",
+          "autmatic"
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 5.203960396039604,
+        "unexpected_percent_nonmissing": 5.203960396039604
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_not_be_null",
+        "kwargs": {
+          "column": "fuel_type",
+          "mostly": 0.99,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": []
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "column": "fuel_type",
+          "mostly": 0.95,
+          "value_set": [
+            "Petrol",
+            "Diesel",
+            "Hybrid",
+            "CNG"
+          ],
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 2542,
+        "unexpected_percent": 5.033663366336634,
+        "partial_unexpected_list": [
+          "deisel",
+          "Gas",
+          "PETROL",
+          "Gazoline",
+          "PETROL",
+          "Gazoline",
+          "deisel",
+          "deisel",
+          "Gas",
+          "Gazoline",
+          "deisel",
+          "Gas",
+          "Gazoline",
+          "Gas",
+          "Gas",
+          "Gazoline",
+          "Gazoline",
+          "Gazoline",
+          "PETROL",
+          "PETROL"
+        ],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 5.033663366336634,
+        "unexpected_percent_nonmissing": 5.033663366336634
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "column": "engine_cc",
+          "max_value": 5000,
+          "min_value": 500,
+          "mostly": 0.95,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 1528,
+        "unexpected_percent": 3.282562461062536,
+        "partial_unexpected_list": [
+          45674.0,
+          28836.0,
+          13830.0,
+          36265.0,
+          21754.0,
+          17408.0,
+          56102.0,
+          14056.0,
+          47143.0,
+          12141.0,
+          12253.0,
+          36376.0,
+          37772.0,
+          56449.0,
+          59287.0,
+          30606.0,
+          44891.0,
+          16640.0,
+          31357.0,
+          11633.0
+        ],
+        "missing_count": 3951,
+        "missing_percent": 7.823762376237624,
+        "unexpected_percent_total": 3.0257425742574258,
+        "unexpected_percent_nonmissing": 3.282562461062536
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": false,
+      "expectation_config": {
+        "expectation_type": "expect_column_mean_to_be_between",
+        "kwargs": {
+          "column": "engine_cc",
+          "max_value": 2500,
+          "min_value": 800,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "observed_value": 2553.8026810457795
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "column": "mileage_km",
+          "max_value": 1000000,
+          "min_value": 0,
+          "mostly": 0.97,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 3015,
+        "missing_percent": 5.97029702970297,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "column": "num_owners",
+          "max_value": 10,
+          "min_value": 1,
+          "mostly": 0.98,
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    },
+    {
+      "success": true,
+      "expectation_config": {
+        "expectation_type": "expect_column_values_to_be_in_set",
+        "kwargs": {
+          "column": "body_type",
+          "mostly": 0.97,
+          "value_set": [
+            "Sedan",
+            "Hatchback",
+            "SUV",
+            "Crossover",
+            "MPV",
+            "Pickup"
+          ],
+          "batch_id": "pakwheels_pandas-corrupted_dataset_asset"
+        },
+        "meta": {}
+      },
+      "result": {
+        "element_count": 50500,
+        "unexpected_count": 0,
+        "unexpected_percent": 0.0,
+        "partial_unexpected_list": [],
+        "missing_count": 0,
+        "missing_percent": 0.0,
+        "unexpected_percent_total": 0.0,
+        "unexpected_percent_nonmissing": 0.0
+      },
+      "meta": {},
+      "exception_info": {
+        "raised_exception": false,
+        "exception_traceback": null,
+        "exception_message": null
+      }
+    }
+  ],
+  "evaluation_parameters": {},
+  "statistics": {
+    "evaluated_expectations": 22,
+    "successful_expectations": 15,
+    "unsuccessful_expectations": 7,
+    "success_percent": 68.18181818181817
+  },
+  "meta": {
+    "great_expectations_version": "0.18.22",
+    "expectation_suite_name": "PakWheels Data Quality Validation",
+    "run_id": {
+      "run_name": null,
+      "run_time": "2026-04-14T00:02:54.310881+05:00"
+    },
+    "batch_spec": {
+      "batch_data": "PandasDataFrame"
+    },
+    "batch_markers": {
+      "ge_load_time": "20260413T190254.226320Z",
+      "pandas_data_fingerprint": "0f3e650ec83af774baff3e06b045a53a"
+    },
+    "active_batch_definition": {
+      "datasource_name": "pakwheels_pandas",
+      "data_connector_name": "fluent",
+      "data_asset_name": "corrupted_dataset_asset",
+      "batch_identifiers": {}
+    },
+    "validation_time": "20260413T190254.310780Z",
+    "checkpoint_name": null
+  }
+}

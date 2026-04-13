@@ -1,0 +1,14 @@
+# Data Processing & ML
+pandas
+numpy
+scikit-learn
+joblib
+
+# Backend API
+fastapi
+uvicorn
+pydantic
+
+# Frontend UI
+streamlit
+requests

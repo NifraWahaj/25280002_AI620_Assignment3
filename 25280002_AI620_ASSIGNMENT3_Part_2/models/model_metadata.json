@@ -1,0 +1,21 @@
+{
+  "price_threshold_pkr": 2700000.0,
+  "numeric_features": [
+    "year",
+    "car_age",
+    "engine_capacity_cc",
+    "mileage"
+  ],
+  "categorical_features": [
+    "make",
+    "transmission",
+    "fuel",
+    "body_type",
+    "city"
+  ],
+  "accuracy": 0.9533,
+  "classes": [
+    "Low Price",
+    "High Price"
+  ]
+}
